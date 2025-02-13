@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const dbConnect = require("./DB/db")
 const router = require("./routes/authRoutes")
 const corsOption = {
-    origin : "http://localhost:5173",
+    origin : "http://localhost:4200",
     methods: "GET, POST, DELETE, PUT, PATCH, HEAD",
     credentials: true,
 }
