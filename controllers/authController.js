@@ -106,4 +106,14 @@ const checkUser = async(req,res)=>{
 
 }
 
-module.exports = {addUser,checkUser,checkLogin}
+const getUsers = async(req,res)=>{
+    try {
+        res.status(400).json({
+            msg:"User not found"
+        })
+    } catch (error) {
+        
+    }
+}
+
+module.exports = {addUser,checkUser,checkLogin,getUsers}
